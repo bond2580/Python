@@ -141,7 +141,7 @@ for model, param in params.items():
 
 
 #提出用データの作成
-df = pd.DataFrame([Id, test_y]).T
+df = pd.DataFrame([Id, pred).T
 
 
 # In[272]:
