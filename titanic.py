@@ -124,7 +124,7 @@ for model, param in params.items():
     clf = RandomizedSearchCV(model, param, cv=5)
     clf.fit(train_X, train_y)
     
-    score = clf.score(test_X, test_y)
+    score = clf.score(train_X, train_y)
     print(model)
     print("Score: %f" %score)
     
